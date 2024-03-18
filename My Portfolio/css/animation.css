@@ -1,0 +1,244 @@
+/* ローディングここから */
+#loading {
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: slow-remove;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+@keyframes slow-remove {
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: solid 5px rgb(194, 194, 194);
+  z-index: 10;
+
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /* animation-delay: 3s; */
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0%{
+    rotate: 0deg;
+  }
+
+  100%{
+    rotate: 360deg;
+  }
+}
+
+.loading-text {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: white;
+}
+/* ローディングここまで */
+
+
+#nav-pc {
+  display: none;
+  animation-name: add-nav;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes add-nav {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+#blog-area {
+  display: none;
+  animation-name: add-blog-area;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes add-blog-area {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.add-scroll {
+  display: none;
+  animation-name: add-scroll;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes add-scroll {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.remove-scroll {
+  animation-name: remove-scroll;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes remove-scroll {
+  0%{
+    opacity: 100%;
+  }
+
+  100%{
+    opacity: 0%;
+  }
+}
+
+.background-nav {
+  display: none;
+  animation-name: portfolio;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes portfolio {
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+
+
+#portfolio-wrapper {
+  display: none;
+  animation-name: portfolio-wrapper;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes portfolio-wrapper {
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+#skill {
+  opacity: 0;
+}
+
+.add-skill {
+  animation-name: skill;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skill {
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+#profile {
+  /* display: none; */
+  opacity: 0;
+}
+
+.add-profile {
+  animation-name: profile;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes profile {
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+#contact, #footer {
+  /* display: none; */
+  opacity: 0;
+}
+
+.add-contact, .add-footer {
+  animation-name: contact;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contact {
+  0%{
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
